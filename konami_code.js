@@ -4,5 +4,14 @@ function init() {
   let index = 0;
   
   const docBody = document.querySelector('body');
-  docBody.addEventListener('keydown', capture)
+  docBody.addEventListener('keydown', capture);
+  
+  function capture(e) {
+    const key = parseInt(e.detail || e.which);
+    
+    if (key === code[index]) {
+      index++;
+      
+    }
+  }
 }
