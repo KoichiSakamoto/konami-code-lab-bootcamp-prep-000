@@ -4,5 +4,5 @@ function init() {
   let index = 0;
   
   const docBody = document.querySelector('body');
-  docBody.addEventListener('keydown')
+  docBody.addEventListener('keydown', capture)
 }
